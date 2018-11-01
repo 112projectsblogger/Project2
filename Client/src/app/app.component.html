@@ -2,43 +2,43 @@
 
 <div style="text-align:center">
   <div id="userInputDiv">
-    <p>Wybierz odpowiednią kategorię:</p>
+    <p>Select relevant category:</p>
     <select [(ngModel)]="category"> 
-      <option value="business">biznes</option>
-      <option value="general">ogólne</option>
-      <option value="science">nauka</option>
-      <option value="entertainment">rozrywka</option>
-      <option value="sports">sport</option>
-      <option value="technology">technologia</option>
-      <option value="health">zdrowie</option>
+      <option value="business">business</option>
+      <option value="entertainment">entertainment</option>
+      <option value="general">general</option>
+      <option value="health">health</option>
+      <option value="science">science</option>
+      <option value="sports">sports</option>
+      <option value="technology">technology</option>
     </select><br />
     <br />
-    <button (click)="fetchNews(category)" type="submit">Zatwierdź</button>
+    <button (click)="fetchNews(category)" type="submit">Confirm</button>
   </div>
 </div>
   <hr>
   <div id="fetchedNewsDiv" style="text-align:left" *ngIf="fetchNewsResponse">
-    <p>Kraj: {{fetchNewsResponse.country}}</p>
-    <p>Kategoria: {{fetchNewsResponse.category}}</p>
+    <p>Country: {{fetchNewsResponse.country}}</p>
+    <p>Category: {{fetchNewsResponse.category}}</p>
     <div id="articlesDiv" *ngFor="let article of fetchNewsResponse.articles">
         <table>
           <tr>
-            <td>Autor: {{article.author}}</td>
+            <td>Author: {{article.author}}</td>
           </tr>
           <tr>
-              <td>Tytuł: {{article.title}}</td>
+              <td>Title: {{article.title}}</td>
           </tr>
           <tr>
-            <td>Opis: {{article.description}}</td>
+            <td>Description: {{article.description}}</td>
           </tr>
           <tr>
-              <td>Data: {{article.date}}</td>
+              <td>Date: {{article.date}}</td>
           </tr>
           <tr>
-              <td>Nazwa źródła: {{article.sourceName}}</td>
+              <td>Source name: {{article.sourceName}}</td>
           </tr>
           <tr>
-              <td>Link artykułu: {{article.articleUrl}}</td>
+              <td>Article's URL: {{article.articleUrl}}</td>
           </tr>
           <tr>
               <td><img src="{{article.imageUrl}}"/></td>
