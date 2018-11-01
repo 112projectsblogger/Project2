@@ -1,11 +1,29 @@
-#NewsBrowser
-Project enabling fetching news from NewsAPI.org.
+# NewsBrowser
+Project enabling fetching news with use of NewsAPI.
 
-#Running
-For running the application go to the Server folder and type in console:
+# Installation
+You can open console in project's root folder and type in:
+```
+mvn clean install
+```
+
+# Running
+For running the application go to the Server folder and enter in console:
 ```
 mvn clean spring-boot:run
 ```
-Once that is done you can go back to NewsBrowser folder and open Client.
-Enter ng start in console.
-Layers of application are available on localhosts 8080 and 4200 respectively.
+Once that is done you can go back to root folder and open Client.
+
+Enter in console
+```
+ng serve
+```
+Server side's port is 8080 and Client side's 4200.
+You can try to reach server's endpoint by entering in browser
+```
+http://localhost:8080/news/{country}/{category}/
+```
+Please refer to Server module's readme file.
+You can try to reach Client module by entering in browser
+```
+http://localhost:4200/
