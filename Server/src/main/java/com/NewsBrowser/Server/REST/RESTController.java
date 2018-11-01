@@ -37,7 +37,7 @@ public class RESTController {
 	/**
 	 * Controller for NewsAPI news fetching process.
 	 * Values of origins are of Client module (where port 4200 is of application run, and 9876 of Karma's tests).
-	 * @param country should be lower case ISO 3166-1 code. At this moment only "pl" is supported by this application.
+	 * @param country should be lower case ISO 3166-1 code. At this moment only "us" is supported by this application.
 	 * @param category should be one of "business, entertainment, general, health, science, sports, technology". 
 	 * @return News in form compliant with requirements or null in case input is not valid.
 	 */

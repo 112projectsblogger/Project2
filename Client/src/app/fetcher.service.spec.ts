@@ -16,11 +16,11 @@ describe('FetcherService', () => {
     expect(service).toBeTruthy();
   });
 
-  // 
+  // Server should be set before running this test.
   it('Should have values set', async() => {
     const service: FetcherService = TestBed.get(FetcherService);
     const technologyString = 'technology';
-    const countryString = 'pl';
+    const countryString = 'us';
     service.fetchNews(technologyString);
     await delay(2000);
     expect(service.fetchNewsResponse.category === technologyString);

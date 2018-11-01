@@ -19,8 +19,8 @@ public class NewsAPIURLPreparatorTest {
 	
 	@Test
 	public void prepareFetchNewsURLTest() {
-		String relevantURL = "https://newsapi.org/v2/top-headlines?country=pl&category=technology&apiKey=dc98f2c2ddfe44d0b8102025c394cd08";
-		assertEquals(relevantURL, newsAPIURLPreparator.prepareFetchNewsUrl("pl", "technology"));
+		String relevantURL = "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=dc98f2c2ddfe44d0b8102025c394cd08";
+		assertEquals(relevantURL, newsAPIURLPreparator.prepareFetchNewsUrl("us", "technology"));
 
 	}
 	

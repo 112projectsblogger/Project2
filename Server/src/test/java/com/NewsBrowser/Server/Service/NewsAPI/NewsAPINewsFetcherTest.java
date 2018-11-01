@@ -30,7 +30,7 @@ public class NewsAPINewsFetcherTest {
 	
 	@Before
 	public void initializeVariable() {
-		this.url = newsAPIURLPreparator.prepareFetchNewsUrl("pl", "technology");
+		this.url = newsAPIURLPreparator.prepareFetchNewsUrl("us", "technology");
 	}
 	
 	

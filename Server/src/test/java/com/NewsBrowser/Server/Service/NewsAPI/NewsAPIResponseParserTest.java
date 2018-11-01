@@ -30,7 +30,7 @@ public class NewsAPIResponseParserTest {
 	
 	@Before
 	public void initializeVariable() {
-		String url = newsAPIUrlPreparator.prepareFetchNewsUrl("pl", "technology");
+		String url = newsAPIUrlPreparator.prepareFetchNewsUrl("us", "technology");
 		String fetchNewsResponseBody = newsAPINewsFetcher.fetchNews(url);
 		newsAPIFetchNewsResponse = newsAPIResponseParser.parseFetchNewsResponse(fetchNewsResponseBody);
 	}

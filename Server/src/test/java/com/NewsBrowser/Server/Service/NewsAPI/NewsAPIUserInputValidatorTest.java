@@ -20,13 +20,13 @@ public class NewsAPIUserInputValidatorTest {
 	
 	@Test
 	public void validUserInputTest() {
-		assertEquals(true, newsAPIUserInputValidator.isInputValid("pl", "business"));
-		assertEquals(true, newsAPIUserInputValidator.isInputValid("pl", "entertainment"));
-		assertEquals(true, newsAPIUserInputValidator.isInputValid("pl", "general"));
-		assertEquals(true, newsAPIUserInputValidator.isInputValid("pl", "health"));
-		assertEquals(true, newsAPIUserInputValidator.isInputValid("pl", "science"));
-		assertEquals(true, newsAPIUserInputValidator.isInputValid("pl", "sports"));
-		assertEquals(true, newsAPIUserInputValidator.isInputValid("pl", "technology"));
+		assertEquals(true, newsAPIUserInputValidator.isInputValid("us", "business"));
+		assertEquals(true, newsAPIUserInputValidator.isInputValid("us", "entertainment"));
+		assertEquals(true, newsAPIUserInputValidator.isInputValid("us", "general"));
+		assertEquals(true, newsAPIUserInputValidator.isInputValid("us", "health"));
+		assertEquals(true, newsAPIUserInputValidator.isInputValid("us", "science"));
+		assertEquals(true, newsAPIUserInputValidator.isInputValid("us", "sports"));
+		assertEquals(true, newsAPIUserInputValidator.isInputValid("us", "technology"));
 	}
 	
 	@Test
@@ -34,7 +34,7 @@ public class NewsAPIUserInputValidatorTest {
 		assertEquals(false, newsAPIUserInputValidator.isInputValid(null, null));
 		assertEquals(false, newsAPIUserInputValidator.isInputValid("", ""));
 		assertEquals(false, newsAPIUserInputValidator.isInputValid("de", "sports"));
-		assertEquals(false, newsAPIUserInputValidator.isInputValid("pl", "everything"));
+		assertEquals(false, newsAPIUserInputValidator.isInputValid("us", "everything"));
 	}
 	
 

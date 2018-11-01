@@ -31,7 +31,7 @@ public class RESTControllerTest {
 	@Before
 	public void initializeVariables() {
 		invalidCountry = "test";
-		validCountry = "pl";
+		validCountry = "us";
 		validCategory = "technology";
 		invalidFetchNewsPath = String.format("http://localhost:%s/news/%s/%s/", port, invalidCountry, validCategory);
 		validFetchNewsPath = String.format("http://localhost:%s/news/%s/%s/", port, validCountry, validCategory);
@@ -40,7 +40,7 @@ public class RESTControllerTest {
     @Test
     public void validInputRun() throws Exception {
         assertThat(this.restTemplate.getForObject(validFetchNewsPath, 
-        		String.class)).contains("\"country\":\"pl\",\"category\":\"technology\"");
+        		String.class)).contains("\"country\":\"us\",\"category\":\"technology\"");
         
     }
     

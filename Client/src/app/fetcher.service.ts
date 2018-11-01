@@ -14,7 +14,7 @@ import { News} from './app.component';
 export class FetcherService {
 
   fetchNewsResponse: News;
-  readonly country: string = 'pl';
+  readonly country: string = 'us';
   category: string;
 
   /**

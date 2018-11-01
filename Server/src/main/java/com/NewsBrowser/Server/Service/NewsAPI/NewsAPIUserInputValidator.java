@@ -14,7 +14,7 @@ import com.NewsBrowser.Server.Service.Interfaces.UserInputValidatorInterface;
 
 public class NewsAPIUserInputValidator implements UserInputValidatorInterface{
 
-	private final Set<String> supportedCountries = new HashSet<>(Arrays.asList("pl"));
+	private final Set<String> supportedCountries = new HashSet<>(Arrays.asList("us"));
 	private final Set<String> supportedCategories = new HashSet<>(Arrays.asList("business", "entertainment", "general", "health", "science", "sports", "technology")); 
 	
 	private boolean isCountryValid(String country) {
@@ -36,7 +36,7 @@ public class NewsAPIUserInputValidator implements UserInputValidatorInterface{
 	}
 
 	/**
-	 * @param country should be lower case ISO 3166-1 code. At this moment only "pl" is supported by this application.
+	 * @param country should be lower case ISO 3166-1 code. At this moment only "us" is supported by this application.
 	 * @param category should be one of "business, entertainment, general, health, science, sports, technology".
 	 */
 	@Override
