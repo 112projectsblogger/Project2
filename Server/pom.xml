@@ -5,8 +5,8 @@
 
 
 	<parent>
-		<groupId>com.NewsBrowser</groupId>
-		<artifactId>NewsBrowser</artifactId>
+		<groupId>com.Project2</groupId>
+		<artifactId>Project2</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
@@ -24,7 +24,7 @@
 
 
 		<dependency>
-            <groupId>com.NewsBrowser</groupId>
+            <groupId>com.Project2</groupId>
             <artifactId>Client</artifactId>
             <version>${project.version}</version>
             <type>zip</type>

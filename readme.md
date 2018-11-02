@@ -1,4 +1,4 @@
-# NewsBrowser
+# Project2
 Project enabling fetching news with use of NewsAPI.
 
 # Installation
@@ -10,7 +10,7 @@ mvn clean install
 # Running
 For running the application go to the Server folder and enter in console:
 ```
-mvn clean spring-boot:run
+mvn spring-boot:run
 ```
 Once that is done you can go back to root folder and open Client.
 

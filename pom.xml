@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.NewsBrowser</groupId>
-	<artifactId>NewsBrowser</artifactId>
+	<groupId>com.Project2</groupId>
+	<artifactId>Project2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
@@ -13,7 +13,7 @@
 		<module>Client</module>
 	</modules>
 	
-	<name>NewsBrowser</name>
+	<name>Project2</name>
 	<description>Application displaying news. Powered by NewsAPI.org.</description>
 
 	<parent>
