@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.NewsBrowser.Server.Domain"},{"l":"com.NewsBrowser.Server.Domain.NewsAPI"},{"l":"com.NewsBrowser.Server.REST"},{"l":"com.NewsBrowser.Server.Service.Interfaces"},{"l":"com.NewsBrowser.Server.Service.NewsAPI"}]

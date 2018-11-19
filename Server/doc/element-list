@@ -1,7 +1,0 @@
-com.NewsBrowser.Server
-com.NewsBrowser.Server.Domain
-com.NewsBrowser.Server.Domain.NewsAPI
-com.NewsBrowser.Server.REST
-com.NewsBrowser.Server.Service
-com.NewsBrowser.Server.Service.Interfaces
-com.NewsBrowser.Server.Service.NewsAPI
